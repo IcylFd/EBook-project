@@ -1,0 +1,17 @@
+<!--pages/template/template_bookMessage/template_bookMessage.wxml-->
+<template name="bookMessage">
+  <view id='bookMessage'>
+    <image id='bookMessage_left' src='{{bookImage}}' mode='scaleToFill'></image>
+    <view id='bookMessage_right'>
+      <view id='bookMessage_right_top'>
+        <text>{{bookName}}</text>
+      </view>
+      <view id='bookMessage_right_center'>
+        <text>{{bookAuthor}}</text>
+      </view>
+      <view id='bookMessage_right_bottom'>
+        <image src='{{onmycollection == "true" ? "/images/like1.png":"/images/like.png"}}' bindtap='clickLike'></image>
+      </view>
+    </view>
+  </view>
+</template>

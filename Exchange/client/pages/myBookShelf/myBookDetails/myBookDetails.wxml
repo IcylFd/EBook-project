@@ -1,0 +1,19 @@
+<view class='book-title'>
+  <image class='book-img' src="{{bookimage}}"></image>
+  <text class='title'>{{bookname}}</text>
+  <text class='author'>{{bookauthor}}</text>
+  <image src='../../../images/delete.png' class='delete' bindtap='confirm_delete'></image>
+</view>
+
+<view class='details'>
+  <text class='left'>上架时间</text>
+  <text class='right'>2018.4.28</text>
+</view>
+<view class='details'>
+  <text class='left'>想换书籍</text>
+  <text class='right'>白夜行</text>
+</view>
+<view class='details'>
+  <text class='left'>距下架还有</text>
+  <text class='right'>6天</text>
+</view>

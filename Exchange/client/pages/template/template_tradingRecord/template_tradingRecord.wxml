@@ -1,0 +1,31 @@
+<!--pages/template/template_tradingRecord/template_tradingRecord.wxml-->
+<template name="trading_record">
+  <view class='trading_record_li'>
+    <view class='li_top'>
+      <image src='{{userImage}}' mode='scaleToFill'></image>
+      <text>{{userName}}</text>
+    </view>
+    <view class='li_center'>
+      <image src='{{bookImage}}' mode='scaleToFill' class='li_center_left'></image>
+      <view class='li_center_right'>
+        <view class='right_part'>
+          <image src='../../img/point.png' mode='scaleToFill'></image>
+          <text>{{bookName}}</text>
+        </view>
+        <view class='right_part'>
+          <image src='../../img/point.png' mode='scaleToFill'></image>
+          <text>{{position}}</text>
+        </view>
+        <view class='right_part'>
+          <image src='../../img/point.png' mode='scaleToFill'></image>
+          <text>{{toExchange}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='li_bottom'>
+      <view class='li_bottom_state' bindtap='onTradingState' data-tradingState='{{tradingState}}'>
+        <text>{{tradingState}}</text>
+      </view>
+    </view>
+  </view>
+</template>
